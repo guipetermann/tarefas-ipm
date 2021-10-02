@@ -1,0 +1,157 @@
+p {
+  word-break: break-all;
+}
+body {
+  margin: 0 auto;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+}
+.bg-top {
+  height: 250px;
+  width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(133, 230, 232, 0.9191876579733456) 0%,
+    rgba(2, 209, 251, 1) 46%
+  );
+  color: white;
+  opacity: 0.95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-top > h1 {
+  font-size: 50px;
+}
+.div-cadastro-tarefa {
+  display: flex;
+  justify-content: end;
+  margin: 20px 0;
+}
+.body-tarefa {
+  width: calc(100% - 100px);
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.div-tarefa {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+.div-tarefa > div {
+  margin-right: 20px;
+}
+.tarefa {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+  min-height: 250px;
+}
+.titulo-tarefa {
+  font-size: 26px;
+}
+.desc-tarefa,
+.status-tarefa,
+.datas-tarefa,
+.link-editar {
+  margin: 10px 0px;
+}
+.tarefa:hover {
+  background-color: #0ed3fb;
+  color: #fff;
+}
+.tarefa:hover .link-editar {
+  color: #fff;
+}
+.link-editar {
+  color: #000;
+  font-weight: bold;
+  text-decoration: unset;
+}
+.div-cadastro-tarefa a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: unset;
+  font-size: 30px;
+}
+.div-cadastro-tarefa > a:hover {
+  color: #00000087;
+}
+.tarefa p {
+  margin: 0;
+}
+.desc-tarefa {
+  margin: 0px 10px;
+}
+.div-cadastro {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.div-cadastro > form {
+  max-width: 400px;
+  margin-top: 15px;
+}
+.campos-cadastro {
+  display: flex;
+}
+.campos-cadastro > div {
+  margin-right: 50px;
+}
+.campos-cadastro > div:nth-child(0) {
+  margin-right: 50px;
+}
+.btn-cadastro {
+  margin-top: 15px;
+}
+.btn-cadastro > button {
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 50px;
+  font-size: 15px;
+  padding: 0px 15px;
+  cursor: pointer;
+}
+footer {
+  height: 150px !important;
+}
+.editar-esquerda {
+  display: flex;
+  flex-direction: column;
+}
+.editar-esquerda label {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#id .campos-cadastro {
+  align-items: center;
+  flex-direction: column;
+}
+#id .campos-cadastro div {
+  display: flex;
+}
+#id button {
+  width: 200px;
+}
+.editar-direta {
+  flex-direction: column;
+}
+.editar-esquerda {
+  margin-right: 15px;
+}
+.editar-direta label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.div-editar {
+  margin-top: 15px;
+}
